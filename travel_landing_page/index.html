@@ -15,26 +15,26 @@
 								<img src="img/svg/odigo-Logo.svg" alt="Discover Amazing places in Japan" class="header__logo-link">
 							</a>
 				</div>
-			
+				<!-- Називай класи через два нижніх підкреслення __ header__nav, почитай про методологію БЕМ -->
 						<nav class="headernav">
 							<ul class="header__list">
-								
+								<!-- Не потрібно писати #! в href, тобі вистачить лише заглушки # -->
 								<li class="header__item">
 									<a href="#!" class="header__link">Articles</a>
 								</li>
-			
+
 								<li class="header__item">
 									<a href="#!" class="header__link">Locations</a>
 								</li>
-			
+
 								<li class="header__item">
 									<a href="#!" class="header__link">Videos</a>
 								</li>
-			
+
 								<li class="header__item">
 									<a href="#!" class="header__link">Sign in</a>
 								</li>
-			
+
 							</ul>
 						</nav>
 			</div>
@@ -47,13 +47,14 @@
 				<h1 class="intro__title">
 					Discover Amazing places in Japan
 				</h1>
-
+				<!-- Зазвичай subtitle - це не просто параграф, а якийсь заголовок,  зазвичаю використовую <h2> -->
 				<p class="intro__subtitle">
-					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door,
 				</p>
 
 				<form action="" class="search-form">
 					<fieldset class="search-form__wrap">
+						<!-- В тебе інпути та кнопки не повинні бути в тезі <p>, краще в <div> їх вкинути і там щось робити, також повинен бути label для кожного інпута -->
 						<p class="search-form__info">
 							<input type="text" name="user-like-to-do" class="search-form__field" placeholder="What would you like to do?">
 							<input type="text" name="user-like-to-go" class="search-form__field" placeholder="Where would you like to go?">
@@ -68,7 +69,8 @@
 			 <h2 class="benefits__title">
 				Benefits of Odigo
 			 </h2>
-			<div class="benefits__cards">
+				<!-- Тут краще заюзати список ul > li, тому що це в тебе декілька елементів однакових в одному блоці -->
+				<div class="benefits__cards">
 				<div class="benefits__card">
 					<div class="benefits__card-pic">
 						<img src="img/svg/church.jpg" alt="church">
@@ -113,8 +115,8 @@
 				</div>
 			</div>
 		</div>
-		</div>	
-		</section>	
+		</div>
+		</section>
 	</main>
 </body>
 </html>

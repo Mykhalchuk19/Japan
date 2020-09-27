@@ -3,6 +3,9 @@
    License: none (public domain)
 */
 
+/*Знову ресетиш стилі. Два рази, можеш reset.css видаляти впринципі */
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -401,6 +404,8 @@ html {
   box-sizing: inherit;
 }
 
+/* font-family: 'Lato', sans-serif, потрібно дописувати другий параметр*/
+
 body {
   font-family:'Lato';
   font-style: normal;
@@ -409,6 +414,8 @@ body {
   font-weight: normal;
   color:#102746;
 }
+/*Старайся стилі задавати класам, менше юзати тут назви елементів та idб потім важко знаходити помилки, якщо вони виникнуть*/
+/* widows не допоможе для картинки швидш за все, юзай краще width */
 
 img {
   widows: 100%;
@@ -496,6 +503,7 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
+/* Можеш background-color не писати а просто transparent до background дописати, подивись тільки яким параметром */
 
 .search-form__field {
   background-color: transparent;
@@ -536,6 +544,7 @@ header {
 .search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active {
   background-color: #2459a0;
 }
+/* Можна писати, навіть правильно писати 0 замість 0рх */
 
 .benefits__wrap {
   max-width: 1262px;
@@ -545,6 +554,7 @@ header {
   position: relative;
   height: 655px;
 }
+/* Гріди сильно не юзай зараз, старі версії браузерів фігово їх підтримуть, краще флексбокси */
 
 .benefits__cards {
   height: 30vh;
@@ -601,7 +611,7 @@ header {
 }
 
 .benefits__card-more:hover, .benefits__card-more:focus {
-  background: url(../img/svg/shape.svg) no-repeat right center; 
+  background: url(../img/svg/shape.svg) no-repeat right center;
 }
 
 
